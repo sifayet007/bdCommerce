@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <section>
       <div
-        className="mt-44 py-9 w-10/12 mx-auto flex  gap-x-[133px] items-center bg-[url(/public/footerbg.png)] "
+        className="mt-20 py-9 w-10/12 mx-auto flex  gap-x-[133px] items-center bg-[url(/public/footerbg.png)] "
         style={{
           backgroundImage: "url(/footerbg.png)",
           backgroundRepeat: "no-repeat",
@@ -40,7 +40,7 @@ const Footer = () => {
               <Link className="hover:text-[#FB5C12]" href="/">
                 ফিচার
               </Link>
-              <Link className="hover:text-[#FB5C12]" href="/">
+              <Link className="hover:text-[#FB5C12]" href="/price">
                 মূল্য
               </Link>
               <Link className="hover:text-[#FB5C12]" href="/">

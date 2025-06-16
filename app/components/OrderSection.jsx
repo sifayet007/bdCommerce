@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -11,15 +12,16 @@ const OrderSection = () => {
             ৩ মাস
           </span>
           <h4 className=" font-bold mt-5">
-            <span className="text-3xl font-bold">১২,০০০ টাকা</span>
-            <span className="line-through">১৪,৪০০ টাকা</span>
+            <span className="text-2xl font-bold text-orange-500">
+              ১২,০০০ টাকা
+            </span>
           </h4>
-          <p className=" mt-5 text-sm">
+          <p className=" mt-3 text-sm">
             আপনার ব্যবসা শুরু করার প্রথম ধাপ হিসেবে এই প্যাকেজটি উপযুক্ত। এটি
             আপনার ব্যবসার কার্যকারিতা পরীক্ষা এবং প্রাথমিক পর্যায়ে সাফল্যের দিক
             নির্দেশনা দিতে সাহায্য করবে
           </p>
-          <h1 className="flex gap-x-2 items-center  font-bold mb-3 mt-3">
+          <h1 className="flex gap-x-2 items-center  font-bold mb-3 mt-3  text-sm">
             <span>
               <FaCheckCircle className="text-green-500" />
             </span>
@@ -41,9 +43,11 @@ const OrderSection = () => {
               <span>সর্বমোট :</span>
               <span className="font-bold">৩,৬০০ টাকা</span>
             </ul>
-            <button className="py-3 mt-5 text-orange-500 outline-2 outline-orange-500  hover:bg-orange-500  hover:text-white rounded-3xl w-full">
-              অর্ডার করুন
-            </button>
+            <Link href="/contact">
+              <button className="py-3 mt-5 text-orange-500 outline-2 outline-orange-500  hover:bg-orange-500  hover:text-white rounded-3xl w-full">
+                অর্ডার করুন
+              </button>
+            </Link>
           </div>
         </div>
         {/* card 2 */}
@@ -52,15 +56,15 @@ const OrderSection = () => {
             ১ বছর
           </span>
           <h4 className="text-white font-bold mt-5">
-            <span className="text-3xl font-bold">১২,০০০ টাকা</span>
-            <span className="line-through">১৪,৪০০ টাকা</span>
+            <span className="text-2xl font-bold">১২,০০০ টাকা</span>
+            <span className="line-through text-sm">১৪,৪০০ টাকা</span>
           </h4>
-          <p className="text-white mt-5 text-sm">
+          <p className="text-white mt-3 text-sm">
             আমাদের ১২ মাসের প্যাকেজটি দীর্ঘমেয়াদি পরিকল্পনা ও ব্যবসার প্রসার
             নিশ্চিত করার জন্য তৈরি। এই প্যাকেজের মাধ্যমে আপনি আপনার ব্র্যান্ডকে
             আন্তর্জাতিক স্তরে পরিচিত করতে পারবেন।
           </p>
-          <h1 className="flex gap-x-2 items-center text-white font-bold mb-3 mt-3">
+          <h1 className="flex gap-x-2 items-center text-white font-bold mb-3 mt-3  text-sm">
             <span>
               <FaCheckCircle />
             </span>
@@ -85,9 +89,11 @@ const OrderSection = () => {
               <span>সর্বমোট :</span>
               <span className="font-bold">১২,০০০ টাকা</span>
             </ul>
-            <button className="py-3 mt-5 hover:bg-green-500 text-white  bg-orange-500  hover:text-white rounded-3xl w-full">
-              অর্ডার করুন
-            </button>
+            <Link href="/contact">
+              <button className="py-3 mt-5 hover:bg-green-500 text-white  bg-orange-500  hover:text-white rounded-3xl w-full">
+                অর্ডার করুন
+              </button>
+            </Link>
           </div>
         </div>
         {/* card 3? */}
@@ -96,16 +102,18 @@ const OrderSection = () => {
             ৬ মাস
           </span>
           <h4 className=" font-bold mt-5">
-            <span className="text-3xl font-bold text-orange-500">
+            <span className="text-2xl font-bold text-orange-500">
               ৬,৬০০ টাকা
-            </span>{" "}
-            <span className="line-through text-gray-500">৭,২০০ টাকা</span>
+            </span>
+            <span className="line-through text-gray-500 text-sm">
+              ৭,২০০ টাকা
+            </span>
           </h4>
-          <p className=" mt-5 text-sm">
+          <p className=" mt-3 text-sm">
             আপনার ব্যবসাকে আরও পেশাদার এবং কার্যকরভাবে পরিচালনার জন্য ৬ মাসের
             প্যাকেজটি সেরা। এটি আপনার ব্যবসার আয় ও জনপ্রিয়তা বাড়াতে কার্যকর।
           </p>
-          <h1 className="flex gap-x-2 items-center  font-bold mb-3 mt-3">
+          <h1 className="flex gap-x-2 items-center  font-bold mb-3 mt-3 text-sm">
             <span>
               <FaCheckCircle className="text-green-500" />
             </span>
@@ -130,9 +138,11 @@ const OrderSection = () => {
               <span>সর্বমোট :</span>
               <span className="font-bold">৬,৬০০ টাকা</span>
             </ul>
-            <button className="py-3 mt-5 text-orange-500 outline-2 outline-orange-500  hover:bg-orange-500  hover:text-white rounded-3xl w-full">
-              অর্ডার করুন
-            </button>
+            <Link href="/contact">
+              <button className="py-3 mt-5 text-orange-500 outline-2 outline-orange-500  hover:bg-orange-500  hover:text-white rounded-3xl w-full">
+                অর্ডার করুন
+              </button>
+            </Link>
           </div>
         </div>
       </div>
