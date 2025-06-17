@@ -29,15 +29,19 @@ const Navbar = () => {
             <Image src={bdCommerceLogo} alt="bdCommerce" />
           </div>
           <div className="md:flex hidden gap-x-8  ">
-            <Link className="hover:text-[#FB5C12]" href="/">
+            <Link className="hover:text-[#FB5C12] text-[#FB5C12]" href="/">
               ইকমার্স
             </Link>
-            <Link href="/">ফিচার</Link>
-            <Link href="/price">মূল্য</Link>
+            <Link className="text-[#FB5C12]" href="/">
+              ফিচার
+            </Link>
+            <Link className="text-[#FB5C12]" href="/price">
+              মূল্য
+            </Link>
             <div className="group relative inline-block">
               <Link
                 href="/"
-                className="hover:text-[#FB5C12] flex items-center gap-2 "
+                className="hover:text-[#FB5C12] text-[#FB5C12] flex items-center gap-2 "
               >
                 <samp>ডেমো</samp>
                 <samp className=" group-hover:rotate-180 duration-300">
@@ -57,7 +61,7 @@ const Navbar = () => {
                 href="/"
                 className=" flex items-center gap-2 hover:text-[#FB5C12] "
               >
-                <samp className=""> টুলস</samp>
+                <samp className="text-[#FB5C12]"> টুলস</samp>
                 <samp className=" group-hover:rotate-180 duration-300">
                   <MdKeyboardArrowUp />
                 </samp>

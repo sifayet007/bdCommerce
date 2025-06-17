@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import MobileOptimized from "./components/MobileOptimized";
 import OrderSection from "./components/OrderSection";
 import SEOSection from "./components/SEOSection";
+import TestimonialSlider from "./components/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
         </section>
         <section>
           <SEOSection />
+        </section>
+        <section className="bg-white min-h-screen flex items-center justify-center">
+          <TestimonialSlider />
         </section>
         <section>
           <OrderSection />
