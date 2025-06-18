@@ -1,9 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import bdCommerceLogo from "../../public/Group.png";
 import { FiPhone } from "react-icons/fi";
-import { FiMenu } from "react-icons/fi";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
 const Navbar = () => {
@@ -11,20 +9,6 @@ const Navbar = () => {
     <div>
       <div className="backdrop-blur-md fixed top-0 py-4 w-full shadow-lg z-50">
         <nav className="flex justify-between items-center w-10/12 mx-auto ">
-          <div className="relative md:hidden flex">
-            <div>
-              <FiMenu />
-            </div>
-            <div className="flex  absolute bottom-0">
-              <Link className="hover:text-[#FB5C12]" href="/">
-                ইকমার্স
-              </Link>
-              <Link href="/">ফিচার</Link>
-              <Link href="/price">মূল্য </Link>
-              <Link href="/hello">টুলস</Link>
-              <Link href="/demo">ডেমো</Link>
-            </div>
-          </div>
           <div>
             <Image src={bdCommerceLogo} alt="bdCommerce" />
           </div>
@@ -32,7 +16,7 @@ const Navbar = () => {
             <Link className="hover:text-[#FB5C12] text-[#FB5C12]" href="/">
               ইকমার্স
             </Link>
-            <Link className="text-[#FB5C12]" href="/">
+            <Link className="text-[#FB5C12]" href="/feature/customer">
               ফিচার
             </Link>
             <Link className="text-[#FB5C12]" href="/price">
@@ -70,7 +54,7 @@ const Navbar = () => {
           </div>
 
           <Link href="/contact">
-            <button className="hover:bg-[#FB5C12]  hover:text-white duration-200 cursor-pointer flex items-center gap-x-2 py-1 px-3 rounded-full outline-2 hover:outline-[#FB5C12] text-[#FB5C12]">
+            <button className="hover:bg-[#FB5C12]  hover:text-white duration-200 cursor-pointer flex items-center gap-x-2 py-1 px-3 rounded-3xl outline-2 hover:outline-[#FB5C12] text-[#FB5C12]">
               <span>
                 <FiPhone />
               </span>

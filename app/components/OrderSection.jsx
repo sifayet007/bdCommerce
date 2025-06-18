@@ -4,11 +4,11 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const OrderSection = () => {
   return (
-    <div className="px-[100px] mt-60 ">
-      <div className="flex  gap-x-[400px] shadow-2xl p-5 relative">
+    <div className="lg:px-[100px] md:px-5 md:mt-60   ">
+      <div className="md:flex lg:justify-between md:justify-between shadow-2xl p-5  lg:relative md:relative space-y-5 w-full">
         {/* card 1? */}
-        <div className=" p-8 rounded-2xl ">
-          <span className="text-white bg-green-500 py-3 px-5 rounded-3xl ">
+        <div className="lg:p-8 p-4 rounded-2xl md:w-[230px]  lg:w-[425px]">
+          <span className="text-white bg-green-500 lg:py-3 py-1 px-5 md:px-2 md:text-sm rounded-3xl ">
             ৩ মাস
           </span>
           <h4 className=" font-bold mt-5">
@@ -51,13 +51,15 @@ const OrderSection = () => {
           </div>
         </div>
         {/* card 2 */}
-        <div className="bg-orange-500 p-8 rounded-2xl absolute w-[400px] left-[485px] -top-36">
-          <span className="text-orange-500 bg-white py-3 px-5 rounded-3xl ">
+        <div className="bg-orange-500 lg:p-8 p-4  rounded-2xl md:absolute lg:w-[425px] md:w-[230px] md:left-[250px] lg:left-[448px] lg:-top-36 md:-top-20">
+          <span className="text-orange-500 bg-white lg:py-3 py-1 lg:px-5 px-2 md:text-sm rounded-3xl ">
             ১ বছর
           </span>
           <h4 className="text-white font-bold mt-5">
             <span className="text-2xl font-bold">১২,০০০ টাকা</span>
-            <span className="line-through text-sm">১৪,৪০০ টাকা</span>
+            <span className="line-through text-sm md:text-[8px]">
+              ১৪,৪০০ টাকা
+            </span>
           </h4>
           <p className="text-white mt-3 text-sm">
             আমাদের ১২ মাসের প্যাকেজটি দীর্ঘমেয়াদি পরিকল্পনা ও ব্যবসার প্রসার
@@ -97,15 +99,15 @@ const OrderSection = () => {
           </div>
         </div>
         {/* card 3? */}
-        <div className=" p-8 rounded-2xl w-auto">
-          <span className="text-white bg-green-500 py-3 px-5 rounded-3xl ">
+        <div className=" lg:p-8 p-4 rounded-2xl md:w-[230px] lg:w-[425px] ">
+          <span className="text-white bg-green-500 lg:py-3 py-1 lg:px-5 px-2 md:text-sm rounded-3xl ">
             ৬ মাস
           </span>
           <h4 className=" font-bold mt-5">
             <span className="text-2xl font-bold text-orange-500">
               ৬,৬০০ টাকা
             </span>
-            <span className="line-through text-gray-500 text-sm">
+            <span className="line-through text-gray-500 text-sm md:text-[10px]">
               ৭,২০০ টাকা
             </span>
           </h4>

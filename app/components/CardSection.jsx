@@ -7,12 +7,12 @@ import frame4 from "../../public/Frame4.png";
 
 const CardSection = () => {
   return (
-    <div className="bg-gradient-to-tr from-orange-50 to-green-50 p-[60px]">
-      <h2 className="text-3xl mb-12 text-center">
+    <div className="bg-gradient-to-tr from-orange-50 to-green-50 md:p-[60px] p-5  ">
+      <h2 className="text-[clamp(20px,2.5vw,25px)] mb-[clamp(12px,2.5vw,30px)] text-center">
         যে কারণে <span className="text-green-500">বিডি কমার্স-</span> আপনার
         ব্যবসার সেরা সঙ্গী।
       </h2>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2  gap-5">
         <div className="text-center pt-[30px] pb-[58px] px-5 outline-2 outline-white bg-green-50 rounded-lg">
           <span className="flex justify-center">
             <Image
@@ -21,8 +21,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -35,8 +37,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -49,8 +53,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className=" text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -63,8 +69,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -77,8 +85,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -91,8 +101,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -105,8 +117,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>
@@ -119,8 +133,10 @@ const CardSection = () => {
               alt="frame1"
             />
           </span>
-          <h1 className="text-lg font-bold my-5">সহজ ও স্মার্ট প্ল্যাটফর্ম</h1>
-          <p>
+          <h1 className="text-[clamp(14px,2.5vw,18px)] font-bold my-5">
+            সহজ ও স্মার্ট প্ল্যাটফর্ম
+          </h1>
+          <p className="text-[clamp(12px,2.5vw,16px)]">
             বিডি কমার্স এমন একটি ব্যবহারবান্ধব ই-কমার্স প্ল্যাটফর্ম যা আপনাকে
             ঝামেলাহীনভাবে ব্যবসা পরিচালনার সুবিধা দেয়।
           </p>

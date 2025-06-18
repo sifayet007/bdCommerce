@@ -9,16 +9,16 @@ import image472 from "../../public/image 472.png";
 
 const CustomerPanel = () => {
   return (
-    <div className="p-[60] bg-[#FEFFF9]">
-      <div className="flex gap-x-96 items-center">
+    <div className="md:p-[60] p-5 bg-[#FEFFF9] ">
+      <div className="md:flex gap-x-96 space-y-10 items-center">
         <div>
-          <h1 className="flex gap-x-2 text-orange-600 font-bold text-[22px]">
+          <h1 className="flex gap-x-2 text-orange-600 font-bold text-[clamp(18px,2.5vw,22px)]">
             <span>
               <PiStarFourFill />
             </span>
             <span>বিডি কমার্স কেন বেছে নেবেন?</span>
           </h1>
-          <p className="text-2xl font-bold mt-5">
+          <p className="text-[clamp(20px,2.5vw,24px)] font-bold mt-5">
             বিডি কমার্স আপনার ই-কমার্স ব্যবসার জন্য কীভাবে কাজ করে তা দেখুন
             আমাদের ডেমো এক্সপ্লোর করে।
           </p>
@@ -27,7 +27,7 @@ const CustomerPanel = () => {
           <span className="absolute -top-5 -left-5">
             <Image src={highlight} alt="highlight" />
           </span>
-          <p>
+          <p className="text-[clamp(14px,2.5vw,20px)]">
             বিডি কমার্স আপনার ই-কমার্স ব্যবসার জন্য একটি নির্ভরযোগ্য এবং আধুনিক
             প্ল্যাটফর্ম। আমাদের সেবা আপনার ব্যবসার প্রতিটি ধাপকে সহজ, দ্রুত এবং
             কার্যকর করে তোলে
@@ -37,18 +37,21 @@ const CustomerPanel = () => {
           </span>
         </div>
       </div>
-      <div className="flex gap-x-5 mt-[55px]">
-        <div className="p-[30px] outline-2 outline-[#E6E6E6] w-fit rounded-lg bg-gradient-to-tr from-orange-100 to-green-100">
-          <div className="">
+      <div className="md:flex gap-x-5 space-y-8 mt-[55px]">
+        <div className="p-[30px] outline-2 outline-[#E6E6E6]  rounded-lg bg-gradient-to-tr from-orange-100 to-green-100 md:block flex justify-between w-full">
+          <div className="space-y-5">
             <div className="flex items-center gap-x-5 ">
               <h1 className="text-4xl font-bold text-orange-600">অন্বেষণ</h1>
               <span>
                 <Image src={highlight_5} alt="highlight_5" />
               </span>
             </div>
-            <p className="text-2xl">আমাদের উচ্চ মানের ডেমো দেখুন</p>
+            <p className="text-2xl">
+              আমাদের উচ্চ মানের <br />
+              ডেমো দেখুন
+            </p>
           </div>
-          <div className="mt-12 flex justify-center">
+          <div className="mt-12  flex justify-center">
             <Image
               src={frame}
               alt="frame"
@@ -56,14 +59,14 @@ const CustomerPanel = () => {
             />
           </div>
         </div>
-        <div className="outline-2 outline-[#E6E6E6] hover:outline-orange-500 rounded-lg bg-white group ">
+        <div className="outline-2 outline-[#E6E6E6] hover:outline-orange-500 rounded-lg bg-white group w-full">
           <div className="flex gap-x-2 p-3.5">
             <span className="w-3 h-3 bg-[#D9D9D9] rounded-full group-hover:bg-red-500"></span>
             <span className="w-3 h-3 bg-[#D9D9D9] rounded-full group-hover:bg-yellow-500"></span>
             <span className="w-3 h-3 bg-[#D9D9D9] rounded-full group-hover:bg-green-500"></span>
           </div>
           <div className="px-5">
-            <Image src={image472} alt="image472" />
+            <Image className="w-full" src={image472} alt="image472" />
           </div>
           <div className="flex justify-between p-5">
             <h1 className="text-lg font-bold">বিডি কমার্স -</h1>
@@ -72,14 +75,14 @@ const CustomerPanel = () => {
             </button>
           </div>
         </div>
-        <div className="outline-2 outline-[#E6E6E6] bg-white rounded-lg hover:outline-green-600 group">
+        <div className="outline-2 outline-[#E6E6E6] bg-white rounded-lg hover:outline-green-600 group w-full">
           <div className="flex gap-x-2 p-3.5">
             <span className="w-3 h-3 bg-[#D9D9D9] rounded-full group-hover:bg-red-500"></span>
             <span className="w-3 h-3 bg-[#D9D9D9] rounded-full group-hover:bg-yellow-500"></span>
             <span className="w-3 h-3 bg-[#D9D9D9] rounded-full group-hover:bg-green-500"></span>
           </div>
           <div className="px-5">
-            <Image src={image472} alt="image472" />
+            <Image className="w-full" src={image472} alt="image472" />
           </div>
           <div className="flex justify-between p-5">
             <h1 className="text-lg font-bold">বিডি কমার্স -</h1>

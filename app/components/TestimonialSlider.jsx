@@ -9,7 +9,7 @@ import { testimonials } from "../constants";
 
 export default function TestimonialSlider() {
   return (
-    <div className="max-w-4xl mx-auto py-10 px-4">
+    <div className="max-w-lg md:max-w-4xl mx-auto md:py-10 px-4 overflow-hidden ">
       <Swiper
         modules={[Navigation]}
         navigation
@@ -20,13 +20,13 @@ export default function TestimonialSlider() {
       >
         {testimonials.map((t, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center gap-6">
+            <div className="flex flex-col items-center md:gap-6">
               {/* Profile avatars row */}
-              <div className="flex items-center justify-center gap-4 overflow-x-auto pb-2">
+              <div className="flex items-center justify-center md:gap-x-4 gap-x-2.5 overflow-x-auto pb-2">
                 {testimonials.map((item, i) => (
                   <div
                     key={i}
-                    className={`w-20 h-20 rounded-full border-4 ${
+                    className={`md:w-20 w-12 md:h-20 h-12 rounded-full border-4 ${
                       i === index
                         ? "border-green-500"
                         : "border-transparent opacity-35"
@@ -42,19 +42,23 @@ export default function TestimonialSlider() {
               </div>
 
               {/* Testimonial Card */}
-              <div className="bg-[#FEFFF9] p-10 rounded-2xl text-center shadow-sm max-w-xl w-full relative">
-                <div className="flex justify-center text-orange-400 text-3xl space-x-2 mb-5">
+              <div className="bg-[#FEFFF9] md:p-10 p-5 rounded-2xl text-center shadow-sm md:max-w-xl max-w-lg w-full relative">
+                <div className="flex justify-center text-orange-400 md:text-3xl text-xl space-x-2 mb-5">
                   {[...Array(t.rating)].map((_, i) => (
                     <FaStar key={i} />
                   ))}
                 </div>
                 <div className="flex justify-center items-center text-sm text-gray-600 mb-3">
-                  <HiOutlineLocationMarker className="mr-1 text-xl" />
+                  <HiOutlineLocationMarker className="mr-1 md:text-xl " />
                   {t.location}
                 </div>
                 <hr className=" border-gray-300 my-5" />
-                <p className="text-lg font-medium text-gray-800">{t.quote}</p>
-                <p className=" font-bold text-black mt-10">- {t.name}</p>
+                <p className="text-sm md:text-lg font-medium text-gray-800">
+                  {t.quote}
+                </p>
+                <p className=" font-bold text-black md:mt-10 mt-6">
+                  - {t.name}
+                </p>
               </div>
             </div>
           </SwiperSlide>
